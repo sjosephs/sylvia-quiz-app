@@ -1,21 +1,19 @@
 .quiz_header {
   margin-top: 10px;
-  max-width: 500px;
-  width: 500px;
-  padding: 20px;
+  width: 100%;
+  padding: 0px;
   color: blue;
-  position: fixed;
   z-index: 1;
   display: flex;
   justify-content: center;
-  box-shadow: 0 0 90px brown;
+  box-shadow: 0 0 100px brown;
   border-top: 10px;
   font-size: 1rem;
 }
 
 .quiz_title {
   text-align: center;
-  padding: 10px 20px;
+  padding: 0px 20px;
   border: black;
   border-radius: 10px;
 }
