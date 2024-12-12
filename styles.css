@@ -1,0 +1,22 @@
+@import "global.css";
+@import "./components/header.css";
+@import "./components/card.css";
+@import "./components/button.css";
+@import "./components/navigation.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  background-color: rgb(188, 126, 245);
+}
+
+.body {
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-origin: border-box;
+}
