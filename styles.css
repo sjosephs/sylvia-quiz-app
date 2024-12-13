@@ -4,19 +4,14 @@
 @import "./components/button.css";
 @import "./components/navigation.css";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  background-color: rgb(188, 126, 245);
-}
-
-.body {
-  margin: 20px;
-  padding: 0;
+body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 40px;
+  background-color: rgb(188, 126, 245);
+  font-family: Arial, sans-serif;
   background-position: center;
   background-origin: border-box;
 }
