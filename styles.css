@@ -56,3 +56,7 @@ body {
 .dark-mode-switch input {
   transform: scale(1.5);
 }
+
+.hidden {
+  display: none;
+}
