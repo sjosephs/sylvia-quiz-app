@@ -10,3 +10,20 @@ bookmarkButtons.addEventListener("click", () => {
     bookmarkButtons.setAttribute("src", "assets/bookmark.svg"); // Inactive state
   }
 });
+
+// Handling Show/Hide Answer Button
+
+const answerButton = document.querySelector(".button");
+const answerParagraph = document.querySelector(".p");
+
+answerButton.addEventListener("click", () => {
+  if (answerParagraph) {
+    answerParagraph.classList.toggle("hidden");
+
+    if (answerParagraph.classList.contains("hidden")) {
+      answerButton.textContent = "Show Answer";
+    } else {
+      answerButton.textContent = "Hide Answer";
+    }
+  }
+});
