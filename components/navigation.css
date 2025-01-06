@@ -6,4 +6,9 @@
   background-color: burlywood;
   width: 100%;
   box-shadow: 0 1px 18px;
+  padding: 5px;
+}
+
+.active img {
+  filter: brightness(0.5) sepia(1) hue-rotate(180deg);
 }

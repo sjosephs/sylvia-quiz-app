@@ -5,19 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="components/navigation.css" />
   </head>
 
   <body>
     <header class="quiz_header">
       <section>
-        <h1 class="quiz_title">
-          <img src="./assets/quiz_icon.jpg" alt="logo" width="40" height="40" />
-          Quiz App
-        </h1>
+        <img src="./assets/quiz_icon.jpg" alt="logo" width="40" height="40" />
+        <h1 class="quiz_title">Quiz App</h1>
       </section>
     </header>
 
-    <main></main>
+    <main class="profile">
+      <section>
+        <img
+          src="./assets/circle-user-round.svg"
+          alt="User picture"
+          aria-label="User picture"
+          class="profile-section"
+        />
+        <h2>Sylvia Joseph</h2>
+        <p>
+          About Me: A Web Developer ready to take on new challenges. A
+          passionate learner experimenting with HTML, CSS, and JavaScript
+        </p>
+      </section>
+
+      <section class="counter">
+        <img src="./assets/circle-help.svg" alt="Questions" />
+        <span class="stat-count" id="questions-counter">10</span>
+        <img src="./assets/bookmark.svg" alt="Bookmarks" />
+        <span class="stat-count" id="bookmarks-counter">4</span>
+      </section>
+
+      <section class="settings">
+        <h3>Settings</h3>
+        <label class="dark-mode-switch">
+          Dark Mode
+          <input type="checkbox" id="dark-mode-toggle" />
+        </label>
+      </section>
+    </main>
+
     <footer class="quiz_nav">
       <section>
         <nav>
@@ -27,7 +57,7 @@
           <a href="bookmarks.html">
             <img src="./assets/bookmark-check-blue.svg" alt="bookmarks" />
           </a>
-          <a href="profile.html">
+          <a href="profile.html" class="active">
             <img src="./assets/square-user-round.svg" alt="profile" />
           </a>
         </nav>
