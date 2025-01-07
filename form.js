@@ -9,7 +9,7 @@ form.addEventListener("submit", (event) => {
   const inputTag = document.getElementById("tag").value.trim();
 
   // Validate inputs to check if all fields are filled in
-  if (inputQuestion === " " || inputAnswer === " " || inputTag === " ") {
+  if (inputQuestion === "" || inputAnswer === "" || inputTag === "") {
     alert("Please fill in all fields!");
     return;
   }
@@ -70,7 +70,7 @@ form.addEventListener("submit", (event) => {
 
 // Form Field Text Counter //
 
-const maxLength = 150;
+const MAX_LENGTH = 150;
 const fields = [
   {
     field: document.getElementById("question"),
@@ -84,13 +84,13 @@ const fields = [
 
 // Function to update character count
 function updateCounter(field, counter) {
-  const remaining = maxLength - field.value.length;
+  const remaining = MAX_LENGTH - field.value.length;
   counter.textContent = `${remaining} characters left`;
 }
 
 // Attach input event listener to both fields
 fields.forEach(({ field, counter }) => {
-  field.setAttribute("maxlength", maxLength); // Set maxlength attribute
+  field.setAttribute("maxlength", MAX_LENGTH); // Set maxlength attribute
   updateCounter(field, counter); // Initialize counter on page load
 
   field.addEventListener("input", () => {
