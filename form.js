@@ -67,3 +67,33 @@ form.addEventListener("submit", (event) => {
   // Clear the form fields
   form.reset();
 });
+
+// Form Field Text Counter //
+
+const maxLength = 150;
+const fields = [
+  {
+    field: document.getElementById("question"),
+    counter: document.getElementById("question-counter"),
+  },
+  {
+    field: document.getElementById("answer"),
+    counter: document.getElementById("answer-counter"),
+  },
+];
+
+// Function to update character count
+function updateCounter(field, counter) {
+  const remaining = maxLength - field.value.length;
+  counter.textContent = `${remaining} characters left`;
+}
+
+// Attach input event listener to both fields
+fields.forEach(({ field, counter }) => {
+  field.setAttribute("maxlength", maxLength); // Set maxlength attribute
+  updateCounter(field, counter); // Initialize counter on page load
+
+  field.addEventListener("input", () => {
+    updateCounter(field, counter);
+  });
+});
