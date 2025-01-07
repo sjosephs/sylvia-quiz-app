@@ -19,7 +19,7 @@
       <!------------------Question Card -------------------------->
       <fieldset>
         <section class="form_section">
-          <form>
+          <form id="question-form">
             <label for="question">Your Question:</label><br />
             <textarea
               id="question"
@@ -27,6 +27,7 @@
               rows="4"
               cols="50"
               placeholder="Enter your question here..."
+              required
             ></textarea
             ><br /><br />
 
@@ -37,6 +38,7 @@
               rows="4"
               cols="50"
               placeholder="Enter the answer here..."
+              required
             ></textarea
             ><br /><br />
 
@@ -46,13 +48,20 @@
               id="tag"
               name="tag"
               placeholder="(e.g., Movie, Marvel, ...)"
+              required
             /><br /><br />
 
             <button type="submit">Submit</button>
           </form>
         </section>
       </fieldset>
+
+      <section id="new-cards-section">
+        <h3>Newly Created Questions</h3>
+        <!-- New cards will be appended here -->
+      </section>
     </main>
+
     <footer class="quiz_nav">
       <section>
         <nav>
@@ -72,5 +81,6 @@
       </section>
     </footer>
     <script src="script.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
