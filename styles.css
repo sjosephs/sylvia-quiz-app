@@ -60,3 +60,9 @@ body {
 .hidden {
   display: none;
 }
+
+.counter {
+  font-size: 0.9em;
+  color: rgb(30, 57, 210);
+  margin-top: 4px;
+}
