@@ -3,9 +3,11 @@
 @import "./components/card.css";
 @import "./components/button.css";
 @import "./components/navigation.css";
+@import "./components/form.css";
 
 :root {
   --background-color: #262424;
+  --color: #ffffff;
 }
 body {
   display: flex;
@@ -17,10 +19,11 @@ body {
   font-family: Arial, sans-serif;
   background-position: center;
   background-origin: border-box;
-  gap: 20px;
+  gap: 40px;
 }
 
 .profile {
+  color: var(--color);
   padding: 20px;
   text-align: center;
 }
@@ -39,6 +42,7 @@ body {
 }
 
 .stat-count {
+  color: var(--color);
   display: flex;
   font-size: 20px;
   font-weight: bold;
