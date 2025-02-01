@@ -4,16 +4,20 @@
 @import "./components/button.css";
 @import "./components/navigation.css";
 
+:root {
+  --background-color: #262424;
+}
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px;
-  background-color: rgb(188, 126, 245);
+  margin: 0;
+  background-color: var(--background-color);
   font-family: Arial, sans-serif;
   background-position: center;
   background-origin: border-box;
+  gap: 20px;
 }
 
 .profile {
